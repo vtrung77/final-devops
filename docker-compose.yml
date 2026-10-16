@@ -45,6 +45,7 @@ services:
     image: ${APP_IMAGE:-devops-final-app}:${APP_TAG:-latest}
     restart: unless-stopped
     environment:
+      SERVER_PORT: "8080"
       DB_HOST: mysql
       DB_PORT: "3306"
       # TODO 3: lấy tên database, tài khoản, mật khẩu MySQL từ student.env (không ghi cứng)
